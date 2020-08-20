@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+
+    <TextView
+        android:id="@+id/titleAddMealDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="29dp"
+        android:text="Nazwa posiłku:"
+        android:textColor="@color/orange"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nameMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titleAddMealDialog"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="np. sniadanie"
+        android:inputType="textPersonName" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nameMeal"
+        android:layout_marginTop="23dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:layout_marginRight="20dp"
+                android:id="@+id/exitDialog"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_below="@+id/nameMeal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/rounded_button"
+                android:text="Zamknij"
+                android:textColor="@color/colorGreen"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginLeft="20dp"
+                android:id="@+id/addMealButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameMeal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:text="Dodaj"
+                android:textColor="@color/colorGreen"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</RelativeLayout>

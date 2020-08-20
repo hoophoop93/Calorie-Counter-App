@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="activity_item">
+        <item>Piłka nożna</item>
+        <item>Piłka ręczna</item>
+        <item>Bieganie</item>
+        <item>Badminton‎</item>
+        <item>Aerobik</item>
+        <item>Gimnastyka</item>
+        <item>Fitness</item>
+        <item>Rower</item>
+        <item>Marsz</item>
+        <item>Pływanie</item>
+        <item>Taniec</item>
+        <item>Siłownia</item>
+        <item>Koszykówka</item>
+        <item>Tenis</item>
+        <item>Siatkówka</item>
+        <item>Paintaball</item>
+        <item>Wrotki/Rolki</item>
+        <item>Piłka plażowa</item>
+        <item>Rugby</item>
+        <item>Akrobatyka</item>
+        <item>Kajakarstwo</item>
+        <item>Jazda na nartach</item>
+        <item>Jazda na sankach</item>
+        <item>Hokej</item>
+    </string-array>
+</resources>

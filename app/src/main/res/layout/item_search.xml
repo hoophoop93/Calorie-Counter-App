@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    tools:context="com.example.kamil.dyplomowa.activities.CaloryCalculatorSearchAdd">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/txtId"
+        android:visibility="gone"
+        android:text="1"
+        android:layout_weight="50" />
+
+    <TextView
+        android:onClick="showDialog"
+        android:background="@drawable/selektor"
+        android:textColor="@color/orange"
+        android:scrollHorizontally="false"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtNameProduct"
+        android:textSize="16sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

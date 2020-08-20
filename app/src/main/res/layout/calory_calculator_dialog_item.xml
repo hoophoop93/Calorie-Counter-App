@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    >
+
+    <TableLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/nameCaloryCalculatorDialog"
+        android:id="@+id/tableLayout">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="kcal"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/kcalTitleCaloryCalculator" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="0"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:id="@+id/kcalInfoCaloryCalculator" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Tłuszcz(g)"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/fatTitleCaloryCalculator" />
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Białko(g)"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/proteinTitleCaloryCalculator" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="0"
+                android:gravity="center"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:id="@+id/fatInfoCaloryCalculator" />
+
+            <TextView
+                android:text="0"
+                android:gravity="center"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:id="@+id/proteinInfoCaloryCalculator" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:textStyle="bold"
+                android:text="Węglowodany(g)"
+                android:gravity="center"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/carbsTitleCaloryCalculator" />
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:textStyle="bold"
+                android:text="Błonnik(g)"
+                android:gravity="center"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/fiberTitleCaloryCalculator" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="0"
+                android:gravity="center"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:id="@+id/carbsInfoCaloryCalculator" />
+
+            <TextView
+                android:text="0"
+                android:gravity="center"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:id="@+id/fiberInfoCaloryCalculator" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_marginRight="25dp"
+        android:gravity="center|left"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:text="nazwa"
+        android:layout_marginTop="15dp"
+        android:layout_width="359dp"
+        android:layout_height="50dp"
+        android:id="@+id/nameCaloryCalculatorDialog"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/howMuchCaloryCalculator"
+        android:layout_toStartOf="@+id/howMuchCaloryCalculator" />
+
+    <Button
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/colorGreen"
+        android:text="Zamknij"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelCaloryCalculator"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/tableLayout"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="ilość"
+        android:gravity="center|right"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/howMuchCaloryCalculator"
+        android:layout_above="@+id/tableLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"/>
+
+
+</RelativeLayout>

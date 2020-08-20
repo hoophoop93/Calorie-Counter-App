@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bmi_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kamil.dyplomowa.activities.BmiResult">
+
+    <TextView
+        android:textSize="22sp"
+        android:textColor="@color/orange"
+        android:gravity="center|top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showBmi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/showRatingBmi"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:layout_marginTop="14dp"
+        android:id="@+id/showData"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/orange"
+        android:gravity="center|top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/showBmi"
+        android:layout_below="@+id/showData"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/showRatingBmi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <TableRow
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:width="20dp"
+                android:background="@color/dark_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/color1" />
+
+            <TextView
+                android:width="200dp"
+                android:text="TextView"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating1" />
+
+            <TextView
+                android:gravity="center"
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating11" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:width="20dp"
+                android:background="@color/blue"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/color2" />
+
+            <TextView
+                android:width="200dp"
+                android:paddingLeft="10dp"
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating2" />
+
+            <TextView
+                android:gravity="center"
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating22" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:width="20dp"
+                android:background="@color/light_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/color3" />
+
+            <TextView
+                android:width="200dp"
+                android:paddingLeft="10dp"
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating3" />
+
+            <TextView
+                android:gravity="center"
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating33" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:width="20dp"
+                android:background="@color/colorGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/color4" />
+
+            <TextView
+                android:text="TextView"
+                android:width="200dp"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating4" />
+
+            <TextView
+                android:gravity="center"
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating44" />
+
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:width="20dp"
+                android:background="@color/yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/color5" />
+
+            <TextView
+                android:text="TextView"
+                android:width="200dp"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating5" />
+
+            <TextView
+                android:gravity="center"
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating55" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:width="20dp"
+                android:background="@color/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/color6" />
+
+            <TextView
+                android:text="TextView"
+                android:width="200dp"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating6" />
+
+            <TextView
+                android:gravity="center"
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating66" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:width="20dp"
+                android:background="@color/light_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/color7" />
+
+            <TextView
+                android:text="TextView"
+                android:width="200dp"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating7" />
+
+            <TextView
+                android:gravity="center"
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating77" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:width="20dp"
+                android:background="@color/dark_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/color8" />
+
+            <TextView
+                android:text="TextView"
+                android:width="200dp"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating8" />
+
+            <TextView
+                android:gravity="center"
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating88" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

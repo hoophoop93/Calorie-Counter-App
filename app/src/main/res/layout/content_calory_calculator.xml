@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_calory_calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kamil.dyplomowa.activities.CaloryCalculator"
+    tools:showIn="@layout/activity_calory_calculator">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:textColor="@color/colorGreen"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:text="Nazwa produktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameProductTitle" />
+
+        <TextView
+            android:textColor="@color/colorGreen"
+            android:textSize="20sp"
+            android:text="Ilość"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberGramsTitle" />
+    </TableRow>
+
+    <ListView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:id="@+id/caloryCaltulatorListView"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addButtonDialog"
+        android:layout_below="@+id/caloryCaltulatorListView">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+
+                android:textColor="@color/colorGreen"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="kcal"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/kcalTitleCC" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:textColor="@color/orange"
+                android:textSize="18sp"
+                android:text="0"
+                android:gravity="center"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:id="@+id/kcalInfoCC" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Tłuszcz(g)"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/fatTitleCC" />
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Białko(g)"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/proteinTitleCC" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:textColor="@color/orange"
+                android:text="0"
+                android:gravity="center"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:id="@+id/fatInfoCC" />
+
+            <TextView
+                android:textColor="@color/orange"
+                android:text="0"
+                android:gravity="center"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:id="@+id/proteinInfoCC" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:textStyle="bold"
+                android:text="Węglowodany(g)"
+                android:gravity="center"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/carbsTitleCC" />
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:textStyle="bold"
+                android:text="Błonnik(g)"
+                android:gravity="center"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/fiberTitleCC" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:textColor="@color/orange"
+                android:text="0"
+                android:gravity="center"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:id="@+id/carbsInfoCC" />
+
+            <TextView
+                android:textColor="@color/orange"
+                android:text="0"
+                android:gravity="center"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:id="@+id/fiberInfoCC" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

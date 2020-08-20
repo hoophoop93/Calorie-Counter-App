@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_broca"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kamil.dyplomowa.activities.Broca">
+
+    <Spinner
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:spinnerMode="dropdown"
+        android:dropDownWidth="240dp"
+        android:background="@drawable/spinner_border"
+        android:dropDownVerticalOffset="32dp"
+        android:id="@+id/spinner"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/genderLabel"
+        android:layout_alignStart="@+id/genderLabel" />
+
+    <TextView
+        android:text="Płeć"
+        android:textColor="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="29dp"
+        android:textSize="22dp"
+        android:id="@+id/genderLabel" />
+
+    <EditText
+        android:maxLength="2"
+        android:hint="@string/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/spinner"
+        android:layout_alignLeft="@+id/genderLabel"
+        android:layout_alignStart="@+id/genderLabel"
+        android:layout_marginTop="44dp"
+        android:id="@+id/editText" />
+
+    <EditText
+        android:maxLength="3"
+        android:hint="@string/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginTop="39dp"
+        android:id="@+id/editText2" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultBrock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/brockResultInfo"
+        android:textSize="25sp"
+        android:textColor="@color/orange"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/arrow_down"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_alignRight="@+id/spinner"
+        android:layout_alignEnd="@+id/spinner"
+        android:id="@+id/imageView5" />
+
+    <Button
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/colorGreen"
+        android:text="Oblicz"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:id="@+id/resultBrock"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

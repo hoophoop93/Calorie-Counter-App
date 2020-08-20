@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_aplication"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kamil.dyplomowa.activities.AboutAplication">
+
+    <TextView
+        android:textColor="@color/orange"
+        android:text="Aplikacja powstała na potrzeby pracy inżynierskiej pod tytułem:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:id="@+id/textView2"
+        android:textSize="22sp" />
+
+    <TextView
+        android:textColor="@color/colorGreen"
+        android:textStyle="italic"
+        android:text="\''Projekt mobilnej aplikacji bazodanowej na platformę Android  wspomagająca zdrowy tryb życia.\'' "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/textView3"
+        android:textSize="22sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:text="Autor"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14"
+                android:textSize="20sp" />
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:text="Kamil Michalik"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Promotor"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView22" />
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:textSize="20sp"
+                android:text="dr inż. Bogusław Twaróg"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:text="Wersja"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView21"
+                android:textSize="20sp" />
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:gravity="center"
+                android:text="1.0"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView19"
+                android:textSize="20sp" />
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

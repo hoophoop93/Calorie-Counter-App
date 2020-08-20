@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="life_style">
+        <item>Bardzo niska(osoba chora,siedząca w domu)</item>
+        <item>Znikoma(brak ćwiczeń,praca siedząca,szkoła)</item>
+        <item>Bardzo mała(ćwiczenia raz na tydzień,praca lekka)</item>
+        <item>Umiarkowana(ćwiczenia 3 razy w tygodniu - średniej intensywności</item>
+        <item>Duża(dość cięzki trening kilka razy w tygodniu)</item>
+        <item>Bardzo duża(wyczynowe uprawianie sportu)</item>
+
+    </string-array>
+</resources>

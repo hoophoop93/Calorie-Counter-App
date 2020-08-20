@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="com.example.kamil.dyplomowa">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Calculators"
+            android:label="@string/title_calculators"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.BMI"
+            android:label="Kalkulator BMI"
+            android:parentActivityName=".activities.Calculators" />
+        <activity
+            android:name=".activities.Broca"
+            android:label="Masa ciała wg Broca"
+            android:parentActivityName=".activities.Calculators" />
+        <activity
+            android:name=".activities.RequiredCalories"
+            android:label="Zapotrzebowanie kaloryczne"
+            android:parentActivityName=".activities.Calculators" />
+        <activity
+            android:name=".activities.BmiResult"
+            android:label="BMI"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.ProductCategory"
+            android:exported="true"
+            android:label="Znajdz produkt"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.SelectProductTable"
+            android:label="Dodaj produkt"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.AddProduct"
+            android:label="Dodaj Produkt"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.CaloryCalculatorSearchAdd"
+            android:label="Dodawanie produktu"
+            android:parentActivityName=".activities.Calculators">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".activities.CaloryCalculator"
+            android:label="Kalkulator kalorii"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AddGoInfo"
+            android:label="Dodawanie aktywności"
+            android:parentActivityName=".activities.LogActivity" />
+        <activity
+            android:name=".activities.LogActivity"
+            android:label="Dziennik aktywności"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Meals"
+            android:label="Posiłki"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity android:name=".activities.AboutAplication"
+            android:parentActivityName=".activities.MainActivity"
+            android:label="O aplikacji"></activity>
+    </application>
+
+</manifest>

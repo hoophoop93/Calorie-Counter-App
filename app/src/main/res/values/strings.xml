@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Calo</string>
+
+    <string name="app_label1">Sport</string>
+    <string name="app_label2">Fitness</string>
+    <string name="app_label3">Zdrowie</string>
+    <string name="title_activity_main">Menu</string>
+    <string name="title_calculators">Kalkulatory</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Ustawienia</string>
+    <string name="title_activity_bmi">BMI</string>
+
+    <string name="weight">Waga w kg</string>
+    <string name="height">Wzrost w cm</string>
+    <string name="weightBMI">w kg</string>
+    <string name="heightBMI">w cm</string>
+    <string name="age">Wiek</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="app_name2">Dodawanie produktu</string>
+    <string name="search_hint">Znajdz produkt</string>
+    <string name="title_activity_calory_calculator">CaloryCalculator</string>
+    <string name="title_activity_log">LogActivity</string>
+</resources>

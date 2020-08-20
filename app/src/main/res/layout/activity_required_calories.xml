@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_required_calories"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kamil.dyplomowa.activities.RequiredCalories">
+
+    <TextView
+        android:text="Płeć"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/genderLabel" />
+
+    <Spinner
+        android:background="@drawable/spinner_border"
+        android:dropDownWidth="240dp"
+        android:textSize="25dp"
+        android:dropDownVerticalOffset="32dp"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/genderLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/spinner2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/height"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="3"
+        android:layout_below="@+id/editText1RC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:id="@+id/editText2RC" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/weight"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="3"
+        android:layout_below="@+id/editText2RC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp"
+        android:id="@+id/editText3RC" />
+
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/colorGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textViewRC" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/age"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:layout_marginTop="112dp"
+        android:id="@+id/editText1RC"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+
+        android:dropDownVerticalOffset="32dp"
+        android:background="@drawable/spinner_border"
+        android:dropDownWidth="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="61dp"
+        android:id="@+id/spinnerLifeStyle"
+        android:layout_above="@+id/editText2RC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/arrow_down"
+        android:layout_alignBottom="@+id/spinner2"
+        android:layout_alignRight="@+id/spinner2"
+        android:layout_alignEnd="@+id/spinner2"
+        android:id="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/arrow_down"
+        android:layout_alignBottom="@+id/spinnerLifeStyle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageView4" />
+
+    <TextView
+        android:text="Aktywność fizyczna"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lifeStyleLable"
+        android:layout_above="@+id/spinnerLifeStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp" />
+
+    <Button
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/colorGreen"
+        android:text="Oblicz"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRC"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/editText3RC"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="table_name">
+        <item>Produkty zbożowe</item>
+        <item>Produkty mleczne</item>
+        <item>Alkohol</item>
+        <item>Grzyby</item>
+        <item>Jaja</item>
+        <item>Mięso</item>
+        <item>Orzechy</item>
+        <item>Owoce</item>
+        <item>Przyprawy</item>
+        <item>Ryby</item>
+        <item>Słodycze</item>
+        <item>Soki i napoje</item>
+        <item>Tłuszcze</item>
+        <item>Warzywy</item>
+        <item>Wędliny</item>
+    </string-array>
+</resources>
